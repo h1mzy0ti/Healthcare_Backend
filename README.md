@@ -81,7 +81,14 @@ Authorization: Bearer <your_token> in Postman or any API testing tool
 ```
 
 ---
+### Best Practices Implemented
 
+1. Modular App Structure
+2. RESTful Resource Modeling
+3. Consistent Naming
+4. Token Required for Data Access
+
+---
 ## 📬 API Endpoints
 
 ### 🔑 Auth APIs
