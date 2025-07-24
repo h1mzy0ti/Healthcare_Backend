@@ -150,7 +150,7 @@ Authorization: Bearer <token>
   "medical_history": "Hypertension"
 }
 ```
-
+See full documentation = https://documenter.getpostman.com/view/37555239/2sB34oBGwF
 ---
 
 ## 🚧 Future Improvements
@@ -159,9 +159,4 @@ Authorization: Bearer <token>
 - Advanced filtering and pagination
 - Swagger/OpenAPI docs
 - Docker support for easy deployment
-
 ---
-
-## 📝 License
-
-MIT License
