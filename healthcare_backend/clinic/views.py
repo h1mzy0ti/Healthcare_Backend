@@ -107,12 +107,11 @@ class MappingListCreateView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
-class PatientMappingView(APIView):
+class MappingView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request, patient_id):
-        mappings = PatientDoctorMapping.objects.filter(patient__id=patient_id)
+        mappings = PatientDoctorMapping.objects.filter(patient_id=patient_id)
         serializer = MappingSerializer(mappings, many=True)
         return Response(serializer.data)
 
