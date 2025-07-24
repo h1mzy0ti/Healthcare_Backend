@@ -38,6 +38,6 @@ urlpatterns = [
 
     # Mapping
     path('api/mappings/', MappingListCreateView.as_view()),
-    path('api/mappings/<int:patient_id>/', PatientMappingView.as_view()),
+    path('api/mappings/patient/<int:patient_id>/', MappingView.as_view()),
     path('api/mappings/delete/<int:id>/', MappingDeleteView.as_view()),
 ]
